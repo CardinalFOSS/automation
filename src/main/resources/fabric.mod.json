@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "automation",
+  "version": "${version}",
+  "name": "Automation",
+  "description": "An automation mod",
+  "authors": [
+    "QHSS"
+  ],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/automation/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.foss.automation.client.AutomationClient"
+    ],
+    "main": [
+      "com.github.foss.automation.Automation"
+    ]
+  },
+  "mixins": [
+    "automation.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.2",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
